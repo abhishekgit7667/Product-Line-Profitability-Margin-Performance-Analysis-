@@ -32,3 +32,5 @@ This project analyzes product line profitability and margin performance for Nass
 
 ## Status
 Phase 1 completed: Folder setup and project initialization.
+
+Phase 2 completed : Completed data preprocessing for the project by handling missing values, resolving merge mismatches, and ensuring data consistency. Non-critical fields such as factory and location were filled appropriately to avoid data loss. The dataset is now clean and ready for further analysis and modeling.
