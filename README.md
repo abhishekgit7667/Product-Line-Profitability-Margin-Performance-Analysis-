@@ -39,3 +39,6 @@ phase 3 Completed : Feature Engineering Completed(Feature engineering was perfor
 
 phase 4 Completed : Aggregation and Business analysis (The dataset was aggregated at product, division, and monthly levels to generate key business insights. Product-level analysis included sales, cost, profit, and margin metrics with ranking and segmentation (e.g., Star Products, High Sales–Low Margin). Division-level analysis identified performance and revenue-profit gaps, while monthly and factory-level aggregations enabled trend and operational performance analysis.)
 
+phase 5 Completed : Advanced Analysis & Visualization
+Product, division, factory, and monthly summaries were analyzed to evaluate profitability and performance. Key visualizations highlighted top profit and margin products, revenue–profit imbalances, cost-heavy items, and monthly trends. Pareto analysis was applied to identify the products contributing to 80% of revenue and profit, supporting strategic business decisions.
+
