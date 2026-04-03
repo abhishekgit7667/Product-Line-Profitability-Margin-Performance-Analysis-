@@ -1,0 +1,90 @@
+11) Key findings text for report
+
+Use these formats in your report after looking at your actual outputs.
+
+Product findings
+
+Write like this:
+
+Finding 1: Profitability is concentrated in a limited set of products
+
+A relatively small proportion of products contributes the majority of total profit, indicating dependency on a narrow set of strong-performing items.
+
+Finding 2: High sales does not always lead to high profit quality
+
+Several products generate strong revenue but deliver below-average gross margin, suggesting pricing inefficiency or elevated cost burden.
+
+Finding 3: Some high-margin products are under-scaled
+
+A group of products demonstrates strong margin performance but low sales contribution, making them suitable candidates for promotion and wider market focus.
+
+Division findings
+Finding 4: Division-level imbalance exists
+
+Comparison of revenue contribution and profit contribution shows that some divisions generate significant revenue but underperform on profit, indicating structural margin weakness.
+
+Finding 5: Financial efficiency varies across divisions
+
+Divisions with higher gross margin contribute disproportionately more profit relative to their revenue share, showing stronger portfolio efficiency.
+
+Cost findings
+Finding 6: Cost-heavy products reduce portfolio quality
+
+Products with high cost-to-sales ratios and weak margin should be reviewed for sourcing optimization, supplier renegotiation, or pricing revision.
+
+Pareto findings
+Finding 7: Profit concentration risk is present
+
+A limited share of products drives 80% of total profit, which may expose the business to concentration risk if demand patterns shift.
+
+Factory findings
+Finding 8: Factory performance is uneven
+
+Factory-level aggregation highlights differences in sales, profit, and margin efficiency, suggesting that operational contribution is not uniformly distributed across production sites.
+
+
+
+
+11) Key findings text for report
+
+Use these formats in your report after looking at your actual outputs.
+
+Product findings
+
+Write like this:
+
+Finding 1: Profitability is concentrated in a limited set of products
+
+A relatively small proportion of products contributes the majority of total profit, indicating dependency on a narrow set of strong-performing items.
+
+Finding 2: High sales does not always lead to high profit quality
+
+Several products generate strong revenue but deliver below-average gross margin, suggesting pricing inefficiency or elevated cost burden.
+
+Finding 3: Some high-margin products are under-scaled
+
+A group of products demonstrates strong margin performance but low sales contribution, making them suitable candidates for promotion and wider market focus.
+
+Division findings
+Finding 4: Division-level imbalance exists
+
+Comparison of revenue contribution and profit contribution shows that some divisions generate significant revenue but underperform on profit, indicating structural margin weakness.
+
+Finding 5: Financial efficiency varies across divisions
+
+Divisions with higher gross margin contribute disproportionately more profit relative to their revenue share, showing stronger portfolio efficiency.
+
+Cost findings
+Finding 6: Cost-heavy products reduce portfolio quality
+
+Products with high cost-to-sales ratios and weak margin should be reviewed for sourcing optimization, supplier renegotiation, or pricing revision.
+
+Pareto findings
+Finding 7: Profit concentration risk is present
+
+A limited share of products drives 80% of total profit, which may expose the business to concentration risk if demand patterns shift.
+
+Factory findings
+Finding 8: Factory performance is uneven
+
+Factory-level aggregation highlights differences in sales, profit, and margin efficiency, suggesting that operational contribution is not uniformly distributed across production sites.
