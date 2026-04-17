@@ -1,44 +1,174 @@
-# Nassau Candy Product Profitability & Margin Analysis
 
-## Project Overview
-This project analyzes product line profitability and margin performance for Nassau Candy Distributor. The objective is to identify which products and divisions truly drive profit, detect high-sales low-margin products, evaluate cost efficiency, and build an interactive Streamlit dashboard for business decision-making.
+# Nassau Candy Product Line Profitability & Margin Performance Analysis
 
-## Key Objectives
-- Analyze product-level profitability
-- Compare division-level revenue and profit performance
-- Calculate gross margin and profit per unit
-- Perform Pareto analysis for revenue and profit concentration
-- Identify margin-risk and cost-heavy products
-- Build a Streamlit dashboard for interactive analysis
+## 📌 Project Overview
+This project analyzes product-level profitability and margin performance for Nassau Candy Distributor. The objective is to move beyond revenue-based analysis and identify which products and divisions generate real financial value. The project combines data analytics, business intelligence, and machine learning to provide actionable insights for pricing, cost optimization, and product portfolio decisions.
 
-## Project Structure
-- `data/raw/` : Original dataset
-- `data/processed/` : Cleaned and transformed data
-- `data/mapping/` : Factory mapping and coordinates
-- `notebooks/` : Jupyter notebooks
-- `src/` : Python scripts
-- `app/` : Streamlit dashboard
-- `outputs/` : Charts, tables, and model outputs
-- `report/` : Final internship report
-- `presentation/` : Final PPT
+---
 
-## Tools Used
+## 🎯 Business Problem
+In many distribution businesses, high sales volume does not always translate into high profit. Some products generate large revenue but have weak margins due to high costs or inefficient pricing.
+
+This project addresses key business questions:
+- Which products truly drive profit?
+- Which products are high-sales but low-margin?
+- Which divisions are financially efficient?
+- Where should pricing, promotion, or cost optimization be applied?
+
+---
+
+## ⚙️ Project Workflow
+
+### Phase 1 – Project Setup
+- Designed structured folder architecture
+- Organized data, notebooks, outputs, and dashboard components
+- Set up environment for scalable development
+
+### Phase 2 – Data Cleaning & Validation
+- Standardized column names
+- Converted data types (dates, numeric values)
+- Handled missing values and removed invalid records
+- Validated profit consistency (Sales - Cost = Gross Profit)
+
+### Phase 3 – Feature Engineering
+Created key business metrics:
+- Gross Margin (%)
+- Profit per Unit
+- Sales per Unit
+- Cost per Unit
+- Cost Ratio
+- Markup Percentage
+
+### Phase 4 – Aggregation & Analysis
+- Product-level profitability analysis
+- Division-level performance comparison
+- Monthly trend analysis
+- Factory-level contribution analysis
+
+### Phase 5 – Advanced Analysis & Visualization
+- Top profit products
+- Top margin products
+- Sales vs Margin analysis
+- Revenue vs Profit imbalance
+- Cost-heavy product identification
+- Pareto analysis (80/20 rule)
+
+### Phase 6 – Insight & Recommendation Framework
+- Repricing candidates
+- Promotion candidates
+- Cost renegotiation candidates
+- Discontinuation review candidates
+- Action-based product segmentation
+
+### Phase 7 – Streamlit Dashboard
+Developed an interactive dashboard with:
+- KPI summary cards
+- Product performance analysis
+- Division comparison
+- Pareto analysis
+- Recommendation tables
+- Factory performance view
+- User filters (date, division, product search, margin threshold)
+
+### Phase 8 – Machine Learning Integration
+- Linear Regression model for:
+  - Sales forecasting
+  - Profit forecasting
+- K-Means clustering for:
+  - Product segmentation based on sales, profit, and margin
+- Integrated forecast visualization into dashboard
+
+---
+
+## 📊 Key Business Insights
+- High sales does not always imply high profitability
+- Profit is concentrated in a small number of products (Pareto effect)
+- Some divisions generate high revenue but low profit
+- Cost-heavy products significantly reduce margin
+- High-margin products exist but are under-promoted
+
+---
+
+## 💡 Business Recommendations
+- Reprice high-sales low-margin products
+- Promote high-margin low-sales products
+- Renegotiate cost-heavy products
+- Review low-performing products for discontinuation
+- Reduce dependency on limited high-profit products
+
+---
+
+## 🤖 Machine Learning Contribution
+- Forecasted future sales and profit trends using Linear Regression
+- Applied clustering (K-Means) for data-driven product segmentation
+- Added predictive layer to support business planning decisions
+
+---
+
+## 🖥️ Dashboard Features
+- Interactive filters (date, division, product search)
+- KPI cards for quick insights
+- Product and division performance visualization
+- Pareto charts for concentration analysis
+- Actionable recommendation tables
+- Forecast visualization (future sales & profit)
+
+---
+
+## 🛠️ Tools & Technologies
 - Python
 - Pandas
 - NumPy
-- Matplotlib / Plotly
+- Matplotlib / Seaborn
+- Plotly
 - Streamlit
 - Scikit-learn
 
-## Status
-Phase 1 completed: Folder setup and project initialization.
+---
 
-Phase 2 completed : Completed data preprocessing for the project by handling missing values, resolving merge mismatches, and ensuring data consistency. Non-critical fields such as factory and location were filled appropriately to avoid data loss. The dataset is now clean and ready for further analysis and modeling.
+## 📁 Project Structure
 
-phase 3 Completed : Feature Engineering Completed(Feature engineering was performed to create key profitability metrics such as Gross Margin (%), Profit per Unit, Sales per Unit, Cost per Unit, Cost Ratio, and Markup %. Risk indicators like Margin Risk and Cost Efficiency flags were added to identify underperforming products. Additionally, products were segmented into Star Products, High Sales–Low Margin, High Margin–Low Sales, and Low Performers, enabling deeper business insights and decision-making.)
+nassau_profitability_project/
+│
+├── data/
+│ ├── raw/
+│ ├── processed/
+│ └── mapping/
+│
+├── notebooks/
+│
+├── outputs/
+│ ├── charts/
+│ └── tables/
+│
+├── app/
+│ └── streamlit_app.py
+│
+├── README.md
+└── requirements.txt
 
-phase 4 Completed : Aggregation and Business analysis (The dataset was aggregated at product, division, and monthly levels to generate key business insights. Product-level analysis included sales, cost, profit, and margin metrics with ranking and segmentation (e.g., Star Products, High Sales–Low Margin). Division-level analysis identified performance and revenue-profit gaps, while monthly and factory-level aggregations enabled trend and operational performance analysis.)
 
-phase 5 Completed : Advanced Analysis & Visualization
-Product, division, factory, and monthly summaries were analyzed to evaluate profitability and performance. Key visualizations highlighted top profit and margin products, revenue–profit imbalances, cost-heavy items, and monthly trends. Pareto analysis was applied to identify the products contributing to 80% of revenue and profit, supporting strategic business decisions.
+---
+
+## 🚀 How to Run the Project
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+
+streamlit run app/streamlit_app.py
+
+📌 Future Enhancements
+- Use advanced time-series models (ARIMA, Prophet)
+- Add real-time data integration
+- Deploy dashboard on cloud (Streamlit Cloud / AWS)
+- Add user authentication and role-based access
+- Enhance UI/UX for business users
+
+👨‍💻 Author
+
+Abhishek Singh
+MCA Final Year Student
+Data Science Enthusiast
+
 
