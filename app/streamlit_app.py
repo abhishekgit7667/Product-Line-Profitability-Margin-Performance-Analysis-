@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+from pathlib import Path
 # -------------------------------------------------
 # Page Setup
 # -------------------------------------------------
@@ -12,11 +12,6 @@ st.set_page_config(
 
 st.title("Nassau Candy Distributor Dashboard")
 st.caption("Simple business dashboard for profit, margin, product performance, division performance, and forecast analysis")
-
-from pathlib import Path
-import pandas as pd
-import streamlit as st
-
 # -------------------------------------------------
 # Load Data
 # -------------------------------------------------
@@ -26,41 +21,53 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 @st.cache_data
 def load_data():
 
-    df = pd.read_csv(BASE_DIR / "data/processed/nassau_featured.csv")
+    try:
+        df = pd.read_csv(BASE_DIR / "data/processed/nassau_featured.csv")
+        product_summary = pd.read_csv(BASE_DIR / "data/processed/product_summary.csv")
+        division_summary = pd.read_csv(BASE_DIR / "data/processed/division_summary.csv")
+        monthly_summary = pd.read_csv(BASE_DIR / "data/processed/monthly_summary.csv")
+        factory_summary = pd.read_csv(BASE_DIR / "data/processed/factory_summary.csv")
 
-    product_summary = pd.read_csv(BASE_DIR / "data/processed/product_summary.csv")
+        product_actions = pd.read_csv(BASE_DIR / "outputs/tables/product_summary_with_actions.csv")
+        pareto_profit = pd.read_csv(BASE_DIR / "outputs/tables/pareto_profit_table.csv")
+        pareto_revenue = pd.read_csv(BASE_DIR / "outputs/tables/pareto_revenue_table.csv")
 
-    division_summary = pd.read_csv(BASE_DIR / "data/processed/division_summary.csv")
+        sales_forecast = pd.read_csv(BASE_DIR / "outputs/tables/sales_forecast_next_6_months.csv")
+        profit_forecast = pd.read_csv(BASE_DIR / "outputs/tables/profit_forecast_next_6_months.csv")
+        monthly_model = pd.read_csv(BASE_DIR / "outputs/tables/monthly_profit_model_output.csv")
 
-    monthly_summary = pd.read_csv(BASE_DIR / "data/processed/monthly_summary.csv")
+        return (
+            df,
+            product_summary,
+            division_summary,
+            monthly_summary,
+            factory_summary,
+            product_actions,
+            pareto_profit,
+            pareto_revenue,
+            sales_forecast,
+            profit_forecast,
+            monthly_model
+        )
 
-    factory_summary = pd.read_csv(BASE_DIR / "data/processed/factory_summary.csv")
+    except Exception as e:
+        st.error(f"Error loading files: {e}")
+        st.stop()
 
-    product_actions = pd.read_csv(BASE_DIR / "outputs/tables/product_summary_with_actions.csv")
 
-    pareto_profit = pd.read_csv(BASE_DIR / "outputs/tables/pareto_profit_table.csv")
-
-    pareto_revenue = pd.read_csv(BASE_DIR / "outputs/tables/pareto_revenue_table.csv")
-
-    sales_forecast = pd.read_csv(BASE_DIR / "outputs/tables/sales_forecast_next_6_months.csv")
-
-    profit_forecast = pd.read_csv(BASE_DIR / "outputs/tables/profit_forecast_next_6_months.csv")
-
-    monthly_model = pd.read_csv(BASE_DIR / "outputs/tables/monthly_profit_model_output.csv")
-
-    return (
-        df,
-        product_summary,
-        division_summary,
-        monthly_summary,
-        factory_summary,
-        product_actions,
-        pareto_profit,
-        pareto_revenue,
-        sales_forecast,
-        profit_forecast,
-        monthly_model
-    )
+(
+    df,
+    product_summary,
+    division_summary,
+    monthly_summary,
+    factory_summary,
+    product_actions,
+    pareto_profit,
+    pareto_revenue,
+    sales_forecast,
+    profit_forecast,
+    monthly_model
+) = load_data()
 
 # -------------------------------------------------
 # Data Type Fixes
