@@ -18,19 +18,19 @@ st.caption("Simple business dashboard for profit, margin, product performance, d
 # -------------------------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("D:/nassau_profitability_project/data/processed/nassau_featured.csv")
-    product_summary = pd.read_csv("D:/nassau_profitability_project/data/processed/product_summary.csv")
-    division_summary = pd.read_csv("D:/nassau_profitability_project/data/processed/division_summary.csv")
-    monthly_summary = pd.read_csv("D:/nassau_profitability_project/data/processed/monthly_summary.csv")
-    factory_summary = pd.read_csv("D:/nassau_profitability_project/data/processed/factory_summary.csv")
+    df = pd.read_csv("data/processed/nassau_featured.csv")
+    product_summary = pd.read_csv("data/processed/product_summary.csv")
+    division_summary = pd.read_csv("data/processed/division_summary.csv")
+    monthly_summary = pd.read_csv("data/processed/monthly_summary.csv")
+    factory_summary = pd.read_csv("data/processed/factory_summary.csv")
 
-    product_actions = pd.read_csv("D:/nassau_profitability_project/outputs/tables/product_summary_with_actions.csv")
-    pareto_profit = pd.read_csv("D:/nassau_profitability_project/outputs/tables/pareto_profit_table.csv")
-    pareto_revenue = pd.read_csv("D:/nassau_profitability_project/outputs/tables/pareto_revenue_table.csv")
+    product_actions = pd.read_csv("data/outputs/tables/product_summary_with_actions.csv")
+    pareto_profit = pd.read_csv("data/outputs/tables/pareto_profit_table.csv")
+    pareto_revenue = pd.read_csv("data/outputs/tables/pareto_revenue_table.csv")
 
-    sales_forecast = pd.read_csv("D:/nassau_profitability_project/outputs/tables/sales_forecast_next_6_months.csv")
-    profit_forecast = pd.read_csv("D:/nassau_profitability_project/outputs/tables/profit_forecast_next_6_months.csv")
-    monthly_model = pd.read_csv("D:/nassau_profitability_project/outputs/tables/monthly_profit_model_output.csv")
+    sales_forecast = pd.read_csv("data/outputs/tables/sales_forecast_next_6_months.csv")
+    profit_forecast = pd.read_csv("data/outputs/tables/profit_forecast_next_6_months.csv")
+    monthly_model = pd.read_csv("data/outputs/tables/monthly_profit_model_output.csv")
 
     return (
         df,
