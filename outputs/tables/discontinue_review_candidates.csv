@@ -1,0 +1,5 @@
+product_id,product_name,division,sales,cost,gross_profit,units,total_orders,gross_margin_pct,profit_per_unit,revenue_contribution_pct,profit_contribution_pct,profit_rank,margin_rank,product_segment
+SUG-FUN-75000,Fun Dip,Sugar,12.0,7.2,4.8,8,3,40.0,0.6,0.008463600487588,0.0051368323723176,15.0,14.0,Low Performer
+SUG-NER-92000,Nerds,Sugar,15.0,8.0,7.0,10,4,46.66666666666666,0.7,0.010579500609485,0.0074912138762965,14.0,12.5,Low Performer
+SUG-SWE-91000,SweeTARTS,Sugar,61.5,32.8,28.7,41,10,46.66666666666666,0.7,0.0433759524988886,0.0307139768928157,13.0,12.5,Low Performer
+OTH-FIZ-56000,Fizzy Lifting Drinks,Sugar,78.75,31.5,47.25,21,6,60.0,2.25,0.0555423781997964,0.0505656936650014,11.0,9.0,Low Performer

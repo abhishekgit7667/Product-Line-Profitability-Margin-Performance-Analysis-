@@ -1,0 +1,4 @@
+product_id,product_name,division,sales,cost,gross_profit,units,total_orders,gross_margin_pct,profit_per_unit,revenue_contribution_pct,profit_contribution_pct,profit_rank,margin_rank,product_segment
+SUG-EVE-47000,Everlasting Gobstopper,Sugar,130.0,26.0,104.0,13,3,80.0,8.0,0.0916890052822035,0.1112980347335482,8.0,1.0,Star Product
+SUG-HAI-55000,Hair Toffee,Sugar,76.5,17.0,59.5,17,4,77.77777777777779,3.5,0.0539554531083736,0.0636753179485203,10.0,2.0,High Margin Low Sales
+SUG-LAF-25000,Laffy Taffy,Sugar,53.73,20.25,33.48,27,10,62.311557788944725,1.24,0.0378957711831753,0.0358294057969153,12.0,8.0,High Margin Low Sales
